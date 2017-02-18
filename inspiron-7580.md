@@ -9,18 +9,20 @@ The following notes can guide you to configure a Dell Inspiron 7568 laptop to ex
 - 4K Ultra HD Touchscreen.
 
 ## What's working:
+
 - Graphics.
 - Internal audio (partially working).
 - Wifi module & bluetooth (needs hardware replacement, read below).
 - Track pad.
 - Battery indicator.
 - Display brightness (partially working).
+- Integrated camera.
+- Touch screen (partially working).
 
 ## What's not working:
-- Integrated camera.
+
 - Card reader.
 - HDMI audio (TODO I haven't confirmed with an HDMI TV :P).
-- Touch screen. Might work with [VoodooI2C](https://github.com/alexandred/VoodooI2C).
 
 ## Disclaimer
 
@@ -50,6 +52,7 @@ In addition, the following kernel extensions are required inside the `kexts/othe
 - `BrcmFirmwareData.kext`, `BrcmPatchRAM2.kext`, `FakePCIID_Broadcom_WiFi.kext` and `FakePCIID.kext` from [OS-X-BrcmPatchRAM](https://github.com/RehabMan/OS-X-BrcmPatchRAM) and [OS-X-Fake-PCI-ID](https://github.com/RehabMan/OS-X-Fake-PCI-ID). Enables wifi support for the Broadcom replacement card.
 - `ACPIBatteryManager.kext` from [OS-X-ACPI-Battery-Driver](https://github.com/RehabMan/OS-X-ACPI-Battery-Driver). Enables battery status reporting to the OS.
 - `AppleALC.kext` from [AppleALC](https://github.com/vit9696/AppleALC). enables internal audio. Requires Clover `config.plist` changes (read section below).
+- `USBInjectAll.kext` from [OS-X-USB-Inject-All](https://github.com/RehabMan/OS-X-USB-Inject-All). Enables integrated webcam and partial touchscreen support.
 
 ### Clover `config.plist` pre-installation changes.
 
@@ -365,7 +368,7 @@ Finally, just rebuild your kernel extension cache, and the device should be read
 			<true/>
 		</dict>
 		<key>Theme</key>
-		<string>Bluemac</string>
+		<string>embedded</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
