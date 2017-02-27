@@ -18,10 +18,10 @@ The following notes can guide you to configure a Dell Inspiron 7568 laptop to ex
 - Display brightness (partially working).
 - Integrated camera.
 - Touch screen (partially working).
+- Card reader.
 
 ## What's not working:
 
-- Card reader.
 - HDMI audio (TODO I haven't confirmed with an HDMI TV :P).
 
 ## Disclaimer
