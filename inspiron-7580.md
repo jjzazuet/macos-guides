@@ -15,7 +15,7 @@ The following notes can guide you to configure a Dell Inspiron 7568 laptop to ex
 - Wifi module & bluetooth (needs hardware replacement, read below).
 - Track pad.
 - Battery indicator.
-- Display brightness (partially working).
+- Display brightness (partially working, see notes below).
 - Integrated camera.
 - Touch screen (partially working).
 - Card reader.
@@ -100,6 +100,8 @@ Enable `layout-id` #3 for internal sound card for [AppleALC](https://github.com/
 
 The correct `ig-platform-id` value for this machine is `0x19160000`. However, at installation time, you'll need to intentionally specify an invalid number in this section in order to boot the installer in a fall-back graphics mode for the Intel HD520 card. Otherwise you'll get stuck in the console as described here: [Stuck at DSMOS has arrived](https://www.tonymacx86.com/threads/solved-dell-inspiron-7568-stuck-at-dsmos-as-arrived.206159/).
 
+> Note: you may also set this value at boot time via Clover's patching tools.
+
 ```xml
 <key>ig-platform-id</key>
 <string>0xCAFEBABE</string>
@@ -152,6 +154,16 @@ Then apply the pixel clock patch as described in [mac-pixel-clock-patch-V2](http
 Finally, just rebuild your kernel extension cache, and the device should be ready to operate.
 
     sudo touch /System/Library/Extensions && sudo kextcache -u /
+
+#### Display brighness
+
+As of macOS 10.12.4, Rehabman's `IntelBacklight` kernel extension is partially working since the display settings under Syste settings does not allow changing display brightness values using the slider control.
+
+https://github.com/RehabMan/OS-X-Intel-Backlight/issues/4
+
+You can instead use this tool to set brightness values via the command line:
+
+https://github.com/nriley/brightness
 
 ## Reference Clover `config.plist` system configuration file:
 
