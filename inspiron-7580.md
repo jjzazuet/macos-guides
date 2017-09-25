@@ -53,6 +53,7 @@ In addition, the following kernel extensions are required inside the `kexts/othe
 - `ACPIBatteryManager.kext` from [OS-X-ACPI-Battery-Driver](https://github.com/RehabMan/OS-X-ACPI-Battery-Driver). Enables battery status reporting to the OS.
 - `AppleALC.kext` from [AppleALC](https://github.com/vit9696/AppleALC). enables internal audio. Requires Clover `config.plist` changes (read section below).
 - `USBInjectAll.kext` from [OS-X-USB-Inject-All](https://github.com/RehabMan/OS-X-USB-Inject-All). Enables integrated webcam and partial touchscreen support.
+- `CoreDisplayFixup.kext` from [CoreDisplayFixup](https://github.com/PMheart/CoreDisplayFixup) with `Lilu.kext` from [Lilu](https://github.com/vit9696/Lilu) as a dependency. Enabled 4k display support without patching `CoreDisplay` (pixel clock patch).
 
 ### Clover `config.plist` pre-installation changes.
 
@@ -135,7 +136,9 @@ As with most other Hackintosh installation methods, you'll need to:
 
 - First, apply Apple's system updates before configuring the graphics card correctly. This should prevent having to execute the pixel clock patch twice.
 
-- Rebuild network interface list in order to avoid ["Unable to verify device" error message in iTunes/App Store](https://www.tonymacx86.com/threads/your-device-or-computer-could-not-be-verified-contact-support-for-assistance.160158/). 
+- Rebuild network interface list in order to avoid ["Unable to verify device" error message in iTunes/App Store](https://www.tonymacx86.com/threads/your-device-or-computer-could-not-be-verified-contact-support-for-assistance.160158/).
+
+> Go into System Preferences -> Network and remove all interfaces. Apply, then remove `/Library/Preferences/SystemConfiguration/NetworkInterfaces.plist`. Reboot, then add all your network interfaces back, starting with Ethernet.
 
 ### Clover `config.plist` post-install changes
 
@@ -146,10 +149,6 @@ To get full video acceleration on the HD520 graphics card, first revert back to 
 <key>ig-platform-id</key>
 <string>0x19160000</string>
 ```
-
-Then apply the pixel clock patch as described in [mac-pixel-clock-patch-V2](https://github.com/Floris497/mac-pixel-clock-patch-V2). The only script of this repo that you need to apply is the `CoreDisplay Patcher` for `Intel HD Graphics 10.12 and newer`.
-
-> NOTE: this is the only hard binary patch required in the OS, and any OS upgrade from apple might require you to re-apply this patch after the former is complete.
 
 Finally, just rebuild your kernel extension cache, and the device should be ready to operate.
 
@@ -444,7 +443,7 @@ https://github.com/nriley/brightness
 	<key>SMBIOS</key>
 	<dict>
 		<key>ProductName</key>
-		<string>MacBookAir6,2</string>
+		<string>MacBookPro12,2</string>
 		<key>Trust</key>
 		<true/>
 	</dict>
