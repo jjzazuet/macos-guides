@@ -152,7 +152,8 @@ To get full video acceleration on the HD520 graphics card, first revert back to 
 
 Finally, just rebuild your kernel extension cache, and the device should be ready to operate.
 
-    sudo touch /System/Library/Extensions && sudo kextcache -u /
+    sudo kextcache -system-prelinked-kernel
+    sudo kextcache -system-caches
 
 #### Display brighness
 
