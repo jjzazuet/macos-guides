@@ -1,7 +1,7 @@
 Dell Inspiron 7568
 ==================
 
-The following notes can guide you to configure a Dell Inspiron 7568 laptop to execute [macOS Sierra 10.12.3](http://www.apple.com/macos/) with the following hardware profile:
+The following notes can guide you to configure a Dell Inspiron 7568 laptop to execute [macOS High Sierra 10.13](http://www.apple.com/macos/) with the following hardware profile:
 
 - Main platform: Inspiron 15-7568 (06FF).
 - CPU: Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz.
@@ -184,10 +184,10 @@ https://github.com/nriley/brightness
 			<dict>
 				<key>AddPNLF_1000000</key>
 				<true/>
-				<key>FixDarwin_0002</key>
-				<true/>
 				<key>NewWay_80000000</key>
 				<true/>
+				<key>FixHeaders_20000000</key>
+				<true>
 			</dict>
 			<key>Patches</key>
 			<array>
@@ -241,6 +241,16 @@ https://github.com/nriley/brightness
 					<key>Replace</key>
 					<data>SU1FSQ==</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change MEI to IMEI</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>TUVJXw==</data>
+					<key>Replace</key>
+					<data>SU1FSQ==</data>
+				</dict>
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
@@ -254,6 +264,10 @@ https://github.com/nriley/brightness
 			<dict>
 				<key>Signature</key>
 				<string>DMAR</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>BGRT</string>
 			</dict>
 		</array>
 		<key>SSDT</key>
@@ -295,7 +309,7 @@ https://github.com/nriley/brightness
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1</string>
+		<string>dart=0 nv_disable=1 -v</string>
 		<key>Debug</key>
 		<false/>
 		<key>Legacy</key>
@@ -381,6 +395,8 @@ https://github.com/nriley/brightness
 		</dict>
 		<key>Theme</key>
 		<string>embedded</string>
+		<key>ScreenResolution</key>
+		<string>1024x768</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -431,6 +447,30 @@ https://github.com/nriley/brightness
 				<string>AirPortBrcm4360</string>
 				<key>Replace</key>
 				<data>gflSqgAAZpA=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.12.0 ( (based on Austere.J patch)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Find</key>
+				<data>iUXIOcZ2UQ==</data>
+				<key>Replace</key>
+				<data>iUXIOcbrUQ==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable TRIM for SSD</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>AEFQUExFIFNTRAA=</data>
+				<key>Name</key>
+				<string>IOAHCIBlockStorage</string>
+				<key>Replace</key>
+				<data>AAAAAAAAAAAAAAA=</data>
 			</dict>
 		</array>
 	</dict>
