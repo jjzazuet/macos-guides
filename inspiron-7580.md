@@ -40,8 +40,11 @@ The laptop comes with an intel wifi card which is not natively supported by  mac
 
 Start by configuring Clover to install in UEFI boot mode. The following drivers are required inside the `drivers64UEFI` folder to reach the OS installer.
 
+- `apfs.efi`
 - `HFSPlus.efi`
 - `OsxAptioFixDrv-64.efi`
+
+Use Rehabman's [Clover](https://github.com/RehabMan/Clover) build in order to install Clover to the ESP inside APFS formatted disks.
 
 In addition, the following kernel extensions are required inside the `kexts/other` folder to reach the OS installer, and add support for secondary peripheral devices:
 
