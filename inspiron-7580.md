@@ -241,16 +241,6 @@ https://github.com/nriley/brightness
 					<key>Replace</key>
 					<data>SU1FSQ==</data>
 				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change MEI to IMEI</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>TUVJXw==</data>
-					<key>Replace</key>
-					<data>SU1FSQ==</data>
-				</dict>
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
