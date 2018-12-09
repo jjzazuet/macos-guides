@@ -18,7 +18,7 @@
  *     Compiler ID      "INTL"
  *     Compiler Version 0x20160422 (538313762)
  */
-DefinitionBlock ("", "SSDT", 2, "INTEL", "xh_rvp11", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "USBFix", "xh_rvp11", 0x00000000)
 {
     External (_SB_.PCI0.RP09.PXSX, DeviceObj)    // (from opcode)
     External (_SB_.PCI0.XHC_.RHUB, DeviceObj)    // (from opcode)
@@ -281,6 +281,69 @@ DefinitionBlock ("", "SSDT", 2, "INTEL", "xh_rvp11", 0x00000000)
             Return (GPLD (Zero, 0x06))
         }
     }
+
+    /* ======================================================= */
+    Scope (_SB.PCI0.XHC.RHUB)
+    {
+        Method (SSPA, 0, Serialized)
+        {
+            // If (LEqual (PCHV (), SPTH))
+            Return (0x11)
+        }
+
+        Device (HS11)
+        {
+            Name (_ADR, 0x0B)  // _ADR: Address
+        }
+
+        Device (HS12)
+        {
+            Name (_ADR, 0x0C)  // _ADR: Address
+        }
+
+        Device (HS13)
+        {
+            Name (_ADR, 0x0D)  // _ADR: Address
+        }
+
+        Device (HS14)
+        {
+            Name (_ADR, 0x0E)  // _ADR: Address
+        }
+
+        Device (SS07)
+        {
+            Method (_ADR, 0, NotSerialized)  // _ADR: Address
+            {
+                Return (Add (SSPA (), 0x06))
+            }
+        }
+
+        Device (SS08)
+        {
+            Method (_ADR, 0, NotSerialized)  // _ADR: Address
+            {
+                Return (Add (SSPA (), 0x07))
+            }
+        }
+
+        Device (SS09)
+        {
+            Method (_ADR, 0, NotSerialized)  // _ADR: Address
+            {
+                Return (Add (SSPA (), 0x08))
+            }
+        }
+
+        Device (SS10)
+        {
+            Method (_ADR, 0, NotSerialized)  // _ADR: Address
+            {
+                Return (Add (SSPA (), 0x09))
+            }
+        }
+    }
+    /* ======================================================= */
 
     Scope (\_SB.PCI0.XHC.RHUB.HS11)
     {
