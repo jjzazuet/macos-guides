@@ -1,0 +1,242 @@
+22:930  2:859  Found BIOS RSDP at F0040
+22:930  0:000  Printing ACPI tables from RSDP F0040 ...
+22:930  0:000   F0040: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+22:930  0:000    (Xsdt: 3EC130D0, Rsdt: 3EC13028)
+22:930  0:000    3EC130D0: 'XSDT', 'CBX3', Rev: 1, Len: 292
+22:930  0:000    3EC13028: 'RSDT', 'CBX3', Rev: 1, Len: 164
+22:930  0:000    Tables in Xsdt: 32
+22:930  0:000    0. 3EC3C8B8: 'FACP', 'CBX3', Rev: 5, Len: 268
+22:930  0:000        (Dsdt: 3EC13288, Facs: 3F59B180, XDsdt: 3EC13288, XFacs: 0)
+22:930  0:000        3EC13288: 'DSDT', 'CBX3', Rev: 2, Len: 169518
+22:932  0:002        3F59B180: 'FACS', Ver: 2, Len: 64
+22:932  0:000    1. 3EC3C9C8: 'APIC', 'CBX3', Rev: 3, Len: 188
+22:932  0:000    2. 3EC3CA88: 'FPDT', 'CBX3', Rev: 1, Len: 68
+22:932  0:000    3. 3EC3CAD0: 'FIDT', 'CBX3', Rev: 1, Len: 172
+22:932  0:000    4. 3EC3CB80: 'MCFG', 'CBX3', Rev: 1, Len: 60
+22:932  0:000    5. 3EC3CBC0: 'HPET', 'CBX3', Rev: 1, Len: 56
+22:932  0:000    6. 3EC3CBF8: 'SSDT', 'SataTabl', Rev: 1, Len: 857
+22:932  0:000    7. 3EC3CF58: 'BOOT', 'CBX3', Rev: 1, Len: 40
+22:932  0:000    8. 3EC3CF80: 'SSDT', 'SaSsdt', Rev: 2, Len: 4847
+22:932  0:000    9. 3EC3E270: 'SSDT', 'PegSsdt', Rev: 2, Len: 10390
+22:932  0:000    10. 3EC40B08: 'HPET', 'KBL', Rev: 1, Len: 56
+22:932  0:000    11. 3EC40B40: 'SSDT', 'xh_rvp11', Rev: 2, Len: 3237
+22:932  0:000    12. 3EC417E8: 'UEFI', '', Rev: 1, Len: 66
+22:932  0:000    13. 3EC41830: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6062
+22:933  0:000    14. 3EC42FE0: 'LPIT', 'KBL', Rev: 1, Len: 148
+22:933  0:000    15. 3EC43078: 'SSDT', 'HdaDsp', Rev: 2, Len: 353
+22:933  0:000    16. 3EC431E0: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+22:933  0:000    17. 3EC43480: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+22:933  0:000    18. 3EC46488: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1298
+22:933  0:000    19. 3EC469A0: 'DBGP', '', Rev: 1, Len: 52
+22:933  0:000    20. 3EC469D8: 'DBG2', '', Rev: 0, Len: 84
+22:933  0:000    21. 3EC46A30: 'SSDT', 'UsbCTabl', Rev: 2, Len: 2141
+22:933  0:000    22. 3EC47290: 'SSDT', 'DptfTabl', Rev: 2, Len: 28109
+22:933  0:000    23. 3EC4E060: 'MSDM', 'CBX3', Rev: 3, Len: 85
+22:933  0:000    24. 3EC4E0B8: 'SLIC', 'CBX3', Rev: 3, Len: 374
+22:933  0:000    25. 3EC4E230: 'SSDT', 'SgPeg', Rev: 2, Len: 174
+22:933  0:000    26. 3EC4E2E0: 'NHLT', 'EDK2', Rev: 0, Len: 45
+22:933  0:000    27. 3EC4E310: 'TPM2', 'CBX3', Rev: 3, Len: 52
+22:933  0:000    28. 3EC4E348: 'SSDT', 'AmdTabl', Rev: 1, Len: 3922
+22:933  0:000    29. 3EC4F2A0: 'ASF!', ' HCG', Rev: 32, Len: 160
+22:933  0:000    30. 3EC4F340: 'DMAR', 'EDK2', Rev: 1, Len: 240
+22:933  0:000    31. 3EC4F430: 'BGRT', '', Rev: 0, Len: 56
+22:933  0:000    Tables in Rsdt: 32
+22:933  0:000    0. 3EC13200: 'FACP', 'CBX3', Rev: 2, Len: 132
+22:933  0:000        (Dsdt: 3EC13288, Facs: 3F59B140)
+22:933  0:000        3EC13288: 'DSDT', 'CBX3', Rev: 2, Len: 169518
+22:935  0:002        3F59B140: 'FACS', Ver: 0, Len: 64
+22:935  0:000    1. 3EC3C9C8: 'APIC', 'CBX3', Rev: 3, Len: 188
+22:935  0:000    2. 3EC3CA88: 'FPDT', 'CBX3', Rev: 1, Len: 68
+22:935  0:000    3. 3EC3CAD0: 'FIDT', 'CBX3', Rev: 1, Len: 172
+22:935  0:000    4. 3EC3CB80: 'MCFG', 'CBX3', Rev: 1, Len: 60
+22:935  0:000    5. 3EC3CBC0: 'HPET', 'CBX3', Rev: 1, Len: 56
+22:935  0:000    6. 3EC3CBF8: 'SSDT', 'SataTabl', Rev: 1, Len: 857
+22:935  0:000    7. 3EC3CF58: 'BOOT', 'CBX3', Rev: 1, Len: 40
+22:935  0:000    8. 3EC3CF80: 'SSDT', 'SaSsdt', Rev: 2, Len: 4847
+22:935  0:000    9. 3EC3E270: 'SSDT', 'PegSsdt', Rev: 2, Len: 10390
+22:935  0:000    10. 3EC40B08: 'HPET', 'KBL', Rev: 1, Len: 56
+22:935  0:000    11. 3EC40B40: 'SSDT', 'xh_rvp11', Rev: 2, Len: 3237
+22:935  0:000    12. 3EC417E8: 'UEFI', '', Rev: 1, Len: 66
+22:935  0:000    13. 3EC41830: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6062
+22:935  0:000    14. 3EC42FE0: 'LPIT', 'KBL', Rev: 1, Len: 148
+22:935  0:000    15. 3EC43078: 'SSDT', 'HdaDsp', Rev: 2, Len: 353
+22:935  0:000    16. 3EC431E0: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+22:935  0:000    17. 3EC43480: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+22:935  0:000    18. 3EC46488: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1298
+22:935  0:000    19. 3EC469A0: 'DBGP', '', Rev: 1, Len: 52
+22:935  0:000    20. 3EC469D8: 'DBG2', '', Rev: 0, Len: 84
+22:935  0:000    21. 3EC46A30: 'SSDT', 'UsbCTabl', Rev: 2, Len: 2141
+22:935  0:000    22. 3EC47290: 'SSDT', 'DptfTabl', Rev: 2, Len: 28109
+22:935  0:000    23. 3EC4E060: 'MSDM', 'CBX3', Rev: 3, Len: 85
+22:935  0:000    24. 3EC4E0B8: 'SLIC', 'CBX3', Rev: 3, Len: 374
+22:935  0:000    25. 3EC4E230: 'SSDT', 'SgPeg', Rev: 2, Len: 174
+22:935  0:000    26. 3EC4E2E0: 'NHLT', 'EDK2', Rev: 0, Len: 45
+22:935  0:000    27. 3EC4E310: 'TPM2', 'CBX3', Rev: 3, Len: 52
+22:935  0:000    28. 3EC4E348: 'SSDT', 'AmdTabl', Rev: 1, Len: 3922
+22:935  0:000    29. 3EC4F2A0: 'ASF!', ' HCG', Rev: 32, Len: 160
+22:935  0:000    30. 3EC4F340: 'DMAR', 'EDK2', Rev: 1, Len: 240
+22:935  0:000    31. 3EC4F430: 'BGRT', '', Rev: 0, Len: 56
+22:935  0:000  Found UEFI Acpi 2.0 RSDP at 3EC13000
+22:935  0:000  Saving ACPI tables from RSDP 3EC13000 to EFI\CLOVER\ACPI\origin ...
+22:935  0:000   3EC13000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+23:048  0:113    (Xsdt: 3EC130D0, Rsdt: 3EC13028)
+23:048  0:000    3EC130D0: 'XSDT', 'CBX3', Rev: 1, Len: 292 -> XSDT.aml
+23:171  0:123    3EC13028: 'RSDT', 'CBX3', Rev: 1, Len: 164 -> RSDT.aml
+23:283  0:111    Tables in Xsdt: 32
+23:283  0:000    0. 3EC3C8B8: 'FACP', 'CBX3', Rev: 5, Len: 268 -> FACP.aml
+23:395  0:112        (Dsdt: 3EC13288, Facs: 3F59B180, XDsdt: 3EC13288, XFacs: 0)
+23:395  0:000        3EC13288: 'DSDT', 'CBX3', Rev: 2, Len: 169518 -> DSDT.aml
+23:560  0:164        3F59B180: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+23:665  0:105    1. 3EC3C9C8: 'APIC', 'CBX3', Rev: 3, Len: 188 -> APIC.aml
+23:770  0:104    2. 3EC3CA88: 'FPDT', 'CBX3', Rev: 1, Len: 68 -> FPDT.aml
+23:876  0:106    3. 3EC3CAD0: 'FIDT', 'CBX3', Rev: 1, Len: 172 -> FIDT.aml
+23:982  0:105    4. 3EC3CB80: 'MCFG', 'CBX3', Rev: 1, Len: 60 -> MCFG.aml
+24:128  0:146    5. 3EC3CBC0: 'HPET', 'CBX3', Rev: 1, Len: 56 -> HPET.aml
+24:245  0:116    6. 3EC3CBF8: 'SSDT', 'SataTabl', Rev: 1, Len: 857 -> SSDT-0-SataTabl.aml
+24:381  0:136    7. 3EC3CF58: 'BOOT', 'CBX3', Rev: 1, Len: 40 -> BOOT.aml
+24:497  0:115    8. 3EC3CF80: 'SSDT', 'SaSsdt', Rev: 2, Len: 4847 -> SSDT-1-SaSsdt.aml
+24:637  0:139    9. 3EC3E270: 'SSDT', 'PegSsdt', Rev: 2, Len: 10390 -> SSDT-2-PegSsdt.aml
+24:806  0:169    10. 3EC40B08: 'HPET', 'KBL', Rev: 1, Len: 56 -> HPET.aml
+24:919  0:112    11. 3EC40B40: 'SSDT', 'xh_rvp11', Rev: 2, Len: 3237 -> SSDT-3-xh_rvp11.aml
+25:040  0:120    12. 3EC417E8: 'UEFI', '', Rev: 1, Len: 66 -> UEFI.aml
+25:172  0:132    13. 3EC41830: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6062 -> SSDT-4-CpuSsdt.aml (Found hidden SSDT 7 pcs)
+25:294  0:121        * 3E9B4098: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1716  53 53 44 54 B4 06 00 00 02 94 50 6D 52 65 66 00 Internal length = 1716 -> SSDT-x4_0-Cpu0Ist.aml
+25:425  0:131        * 3E91D018: 'SSDT', 'ApIst', Rev: 2, Len: 3348  53 53 44 54 14 0D 00 00 02 30 50 6D 52 65 66 00 Internal length = 3348 -> SSDT-x4_1-ApIst.aml
+25:547  0:122        * 3E91C018: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 1023  53 53 44 54 FF 03 00 00 02 17 50 6D 52 65 66 00 Internal length = 1023 -> SSDT-x4_2-Cpu0Cst.aml
+25:708  0:160        * 3E91E798: 'SSDT', 'ApCst', Rev: 2, Len: 778  53 53 44 54 0A 03 00 00 02 99 50 6D 52 65 66 00 Internal length = 778 -> SSDT-x4_3-ApCst.aml
+25:839  0:130        * 3E91E018: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 186  53 53 44 54 BA 00 00 00 02 83 50 6D 52 65 66 00 Internal length = 186 -> SSDT-x4_4-Cpu0Hwp.aml
+25:960  0:121        * 3E91EB98: 'SSDT', 'ApHwp', Rev: 2, Len: 791  53 53 44 54 17 03 00 00 02 86 50 6D 52 65 66 00 Internal length = 791 -> SSDT-x4_5-ApHwp.aml
+26:093  0:132        * 3E91E118: 'SSDT', 'HwpLvt', Rev: 2, Len: 1576  53 53 44 54 28 06 00 00 02 8B 50 6D 52 65 66 00 Internal length = 1576 -> SSDT-x4_6-HwpLvt.aml
+26:224  0:131  
+26:224  0:000    14. 3EC42FE0: 'LPIT', 'KBL', Rev: 1, Len: 148 -> LPIT.aml
+26:346  0:122    15. 3EC43078: 'SSDT', 'HdaDsp', Rev: 2, Len: 353
+26:346  0:000    16. 3EC431E0: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+26:346  0:000    17. 3EC43480: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290 -> SSDT-5-PtidDevc.aml
+26:479  0:133    18. 3EC46488: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1298 -> SSDT-6-TbtTypeC.aml
+26:560  0:080    19. 3EC469A0: 'DBGP', '', Rev: 1, Len: 52 -> DBGP.aml
+26:699  0:138    20. 3EC469D8: 'DBG2', '', Rev: 0, Len: 84 -> DBG2.aml
+26:840  0:140    21. 3EC46A30: 'SSDT', 'UsbCTabl', Rev: 2, Len: 2141 -> SSDT-7-UsbCTabl.aml
+26:931  0:091    22. 3EC47290: 'SSDT', 'DptfTabl', Rev: 2, Len: 28109 -> SSDT-8-DptfTabl.aml
+27:002  0:071    23. 3EC4E060: 'MSDM', 'CBX3', Rev: 3, Len: 85 -> MSDM.aml
+27:113  0:110    24. 3EC4E0B8: 'SLIC', 'CBX3', Rev: 3, Len: 374 -> SLIC.aml
+27:223  0:110    25. 3EC4E230: 'SSDT', 'SgPeg', Rev: 2, Len: 174 -> SSDT-9-SgPeg.aml
+27:320  0:096    26. 3EC4E2E0: 'NHLT', 'EDK2', Rev: 0, Len: 45 -> NHLT.aml
+27:431  0:111    27. 3EC4E310: 'TPM2', 'CBX3', Rev: 3, Len: 52 -> TPM2.aml
+27:544  0:112    28. 3EC4E348: 'SSDT', 'AmdTabl', Rev: 1, Len: 3922 -> SSDT-10-AmdTabl.aml
+27:604  0:060    29. 3EC4F2A0: 'ASF!', ' HCG', Rev: 32, Len: 160 -> ASF!.aml
+27:714  0:110    30. 3EC4F340: 'DMAR', 'EDK2', Rev: 1, Len: 240 -> DMAR.aml
+27:824  0:110    31. 3EC4F430: 'BGRT', '', Rev: 0, Len: 56 -> BGRT.aml
+27:935  0:110    Tables in Rsdt: 32
+27:935  0:000    0. 3EC13200: 'FACP', 'CBX3', Rev: 2, Len: 132 -> RSDT-FACP.aml
+28:085  0:150        (Dsdt: 3EC13288, Facs: 3F59B140)
+28:085  0:000        3EC13288: 'DSDT', 'CBX3', Rev: 2, Len: 169518
+28:087  0:002        3F59B140: 'FACS', Ver: 0, Len: 64 -> RSDT-FACS.aml
+28:198  0:110    1. 3EC3C9C8: 'APIC', 'CBX3', Rev: 3, Len: 188
+28:198  0:000    2. 3EC3CA88: 'FPDT', 'CBX3', Rev: 1, Len: 68
+28:198  0:000    3. 3EC3CAD0: 'FIDT', 'CBX3', Rev: 1, Len: 172
+28:198  0:000    4. 3EC3CB80: 'MCFG', 'CBX3', Rev: 1, Len: 60
+28:198  0:000    5. 3EC3CBC0: 'HPET', 'CBX3', Rev: 1, Len: 56
+28:198  0:000    6. 3EC3CBF8: 'SSDT', 'SataTabl', Rev: 1, Len: 857
+28:198  0:000    7. 3EC3CF58: 'BOOT', 'CBX3', Rev: 1, Len: 40
+28:198  0:000    8. 3EC3CF80: 'SSDT', 'SaSsdt', Rev: 2, Len: 4847
+28:198  0:000    9. 3EC3E270: 'SSDT', 'PegSsdt', Rev: 2, Len: 10390
+28:198  0:000    10. 3EC40B08: 'HPET', 'KBL', Rev: 1, Len: 56
+28:198  0:000    11. 3EC40B40: 'SSDT', 'xh_rvp11', Rev: 2, Len: 3237
+28:198  0:000    12. 3EC417E8: 'UEFI', '', Rev: 1, Len: 66
+28:198  0:000    13. 3EC41830: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6062
+28:198  0:000    14. 3EC42FE0: 'LPIT', 'KBL', Rev: 1, Len: 148
+28:198  0:000    15. 3EC43078: 'SSDT', 'HdaDsp', Rev: 2, Len: 353
+28:198  0:000    16. 3EC431E0: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+28:198  0:000    17. 3EC43480: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+28:198  0:000    18. 3EC46488: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1298
+28:198  0:000    19. 3EC469A0: 'DBGP', '', Rev: 1, Len: 52
+28:198  0:000    20. 3EC469D8: 'DBG2', '', Rev: 0, Len: 84
+28:198  0:000    21. 3EC46A30: 'SSDT', 'UsbCTabl', Rev: 2, Len: 2141
+28:198  0:000    22. 3EC47290: 'SSDT', 'DptfTabl', Rev: 2, Len: 28109
+28:198  0:000    23. 3EC4E060: 'MSDM', 'CBX3', Rev: 3, Len: 85
+28:198  0:000    24. 3EC4E0B8: 'SLIC', 'CBX3', Rev: 3, Len: 374
+28:198  0:000    25. 3EC4E230: 'SSDT', 'SgPeg', Rev: 2, Len: 174
+28:198  0:000    26. 3EC4E2E0: 'NHLT', 'EDK2', Rev: 0, Len: 45
+28:198  0:000    27. 3EC4E310: 'TPM2', 'CBX3', Rev: 3, Len: 52
+28:198  0:000    28. 3EC4E348: 'SSDT', 'AmdTabl', Rev: 1, Len: 3922
+28:198  0:000    29. 3EC4F2A0: 'ASF!', ' HCG', Rev: 32, Len: 160
+28:198  0:000    30. 3EC4F340: 'DMAR', 'EDK2', Rev: 1, Len: 240
+28:198  0:000    31. 3EC4F430: 'BGRT', '', Rev: 0, Len: 56
+28:198  0:000  Found UEFI Acpi 1.0 RSDP at 3EC13000
+28:198  0:000  Printing ACPI tables from RSDP 3EC13000 ...
+28:198  0:000   3EC13000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+28:198  0:000    (Xsdt: 3EC130D0, Rsdt: 3EC13028)
+28:198  0:000    3EC130D0: 'XSDT', 'CBX3', Rev: 1, Len: 292
+28:198  0:000    3EC13028: 'RSDT', 'CBX3', Rev: 1, Len: 164
+28:198  0:000    Tables in Xsdt: 32
+28:198  0:000    0. 3EC3C8B8: 'FACP', 'CBX3', Rev: 5, Len: 268
+28:198  0:000        (Dsdt: 3EC13288, Facs: 3F59B180, XDsdt: 3EC13288, XFacs: 0)
+28:198  0:000        3EC13288: 'DSDT', 'CBX3', Rev: 2, Len: 169518
+28:200  0:002        3F59B180: 'FACS', Ver: 2, Len: 64
+28:200  0:000    1. 3EC3C9C8: 'APIC', 'CBX3', Rev: 3, Len: 188
+28:200  0:000    2. 3EC3CA88: 'FPDT', 'CBX3', Rev: 1, Len: 68
+28:200  0:000    3. 3EC3CAD0: 'FIDT', 'CBX3', Rev: 1, Len: 172
+28:200  0:000    4. 3EC3CB80: 'MCFG', 'CBX3', Rev: 1, Len: 60
+28:200  0:000    5. 3EC3CBC0: 'HPET', 'CBX3', Rev: 1, Len: 56
+28:200  0:000    6. 3EC3CBF8: 'SSDT', 'SataTabl', Rev: 1, Len: 857
+28:200  0:000    7. 3EC3CF58: 'BOOT', 'CBX3', Rev: 1, Len: 40
+28:200  0:000    8. 3EC3CF80: 'SSDT', 'SaSsdt', Rev: 2, Len: 4847
+28:200  0:000    9. 3EC3E270: 'SSDT', 'PegSsdt', Rev: 2, Len: 10390
+28:200  0:000    10. 3EC40B08: 'HPET', 'KBL', Rev: 1, Len: 56
+28:200  0:000    11. 3EC40B40: 'SSDT', 'xh_rvp11', Rev: 2, Len: 3237
+28:200  0:000    12. 3EC417E8: 'UEFI', '', Rev: 1, Len: 66
+28:200  0:000    13. 3EC41830: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6062
+28:200  0:000    14. 3EC42FE0: 'LPIT', 'KBL', Rev: 1, Len: 148
+28:200  0:000    15. 3EC43078: 'SSDT', 'HdaDsp', Rev: 2, Len: 353
+28:200  0:000    16. 3EC431E0: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+28:200  0:000    17. 3EC43480: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+28:200  0:000    18. 3EC46488: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1298
+28:200  0:000    19. 3EC469A0: 'DBGP', '', Rev: 1, Len: 52
+28:200  0:000    20. 3EC469D8: 'DBG2', '', Rev: 0, Len: 84
+28:200  0:000    21. 3EC46A30: 'SSDT', 'UsbCTabl', Rev: 2, Len: 2141
+28:200  0:000    22. 3EC47290: 'SSDT', 'DptfTabl', Rev: 2, Len: 28109
+28:200  0:000    23. 3EC4E060: 'MSDM', 'CBX3', Rev: 3, Len: 85
+28:200  0:000    24. 3EC4E0B8: 'SLIC', 'CBX3', Rev: 3, Len: 374
+28:200  0:000    25. 3EC4E230: 'SSDT', 'SgPeg', Rev: 2, Len: 174
+28:200  0:000    26. 3EC4E2E0: 'NHLT', 'EDK2', Rev: 0, Len: 45
+28:200  0:000    27. 3EC4E310: 'TPM2', 'CBX3', Rev: 3, Len: 52
+28:200  0:000    28. 3EC4E348: 'SSDT', 'AmdTabl', Rev: 1, Len: 3922
+28:200  0:000    29. 3EC4F2A0: 'ASF!', ' HCG', Rev: 32, Len: 160
+28:200  0:000    30. 3EC4F340: 'DMAR', 'EDK2', Rev: 1, Len: 240
+28:200  0:000    31. 3EC4F430: 'BGRT', '', Rev: 0, Len: 56
+28:200  0:000    Tables in Rsdt: 32
+28:200  0:000    0. 3EC13200: 'FACP', 'CBX3', Rev: 2, Len: 132
+28:200  0:000        (Dsdt: 3EC13288, Facs: 3F59B140)
+28:200  0:000        3EC13288: 'DSDT', 'CBX3', Rev: 2, Len: 169518
+28:202  0:002        3F59B140: 'FACS', Ver: 0, Len: 64
+28:202  0:000    1. 3EC3C9C8: 'APIC', 'CBX3', Rev: 3, Len: 188
+28:202  0:000    2. 3EC3CA88: 'FPDT', 'CBX3', Rev: 1, Len: 68
+28:202  0:000    3. 3EC3CAD0: 'FIDT', 'CBX3', Rev: 1, Len: 172
+28:202  0:000    4. 3EC3CB80: 'MCFG', 'CBX3', Rev: 1, Len: 60
+28:202  0:000    5. 3EC3CBC0: 'HPET', 'CBX3', Rev: 1, Len: 56
+28:202  0:000    6. 3EC3CBF8: 'SSDT', 'SataTabl', Rev: 1, Len: 857
+28:202  0:000    7. 3EC3CF58: 'BOOT', 'CBX3', Rev: 1, Len: 40
+28:202  0:000    8. 3EC3CF80: 'SSDT', 'SaSsdt', Rev: 2, Len: 4847
+28:202  0:000    9. 3EC3E270: 'SSDT', 'PegSsdt', Rev: 2, Len: 10390
+28:202  0:000    10. 3EC40B08: 'HPET', 'KBL', Rev: 1, Len: 56
+28:202  0:000    11. 3EC40B40: 'SSDT', 'xh_rvp11', Rev: 2, Len: 3237
+28:202  0:000    12. 3EC417E8: 'UEFI', '', Rev: 1, Len: 66
+28:202  0:000    13. 3EC41830: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6062
+28:202  0:000    14. 3EC42FE0: 'LPIT', 'KBL', Rev: 1, Len: 148
+28:202  0:000    15. 3EC43078: 'SSDT', 'HdaDsp', Rev: 2, Len: 353
+28:202  0:000    16. 3EC431E0: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+28:202  0:000    17. 3EC43480: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+28:202  0:000    18. 3EC46488: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1298
+28:202  0:000    19. 3EC469A0: 'DBGP', '', Rev: 1, Len: 52
+28:202  0:000    20. 3EC469D8: 'DBG2', '', Rev: 0, Len: 84
+28:202  0:000    21. 3EC46A30: 'SSDT', 'UsbCTabl', Rev: 2, Len: 2141
+28:202  0:000    22. 3EC47290: 'SSDT', 'DptfTabl', Rev: 2, Len: 28109
+28:202  0:000    23. 3EC4E060: 'MSDM', 'CBX3', Rev: 3, Len: 85
+28:202  0:000    24. 3EC4E0B8: 'SLIC', 'CBX3', Rev: 3, Len: 374
+28:202  0:000    25. 3EC4E230: 'SSDT', 'SgPeg', Rev: 2, Len: 174
+28:202  0:000    26. 3EC4E2E0: 'NHLT', 'EDK2', Rev: 0, Len: 45
+28:202  0:000    27. 3EC4E310: 'TPM2', 'CBX3', Rev: 3, Len: 52
+28:202  0:000    28. 3EC4E348: 'SSDT', 'AmdTabl', Rev: 1, Len: 3922
+28:202  0:000    29. 3EC4F2A0: 'ASF!', ' HCG', Rev: 32, Len: 160
+28:202  0:000    30. 3EC4F340: 'DMAR', 'EDK2', Rev: 1, Len: 240
+28:202  0:000    31. 3EC4F430: 'BGRT', '', Rev: 0, Len: 56
